@@ -1,0 +1,26 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "SocketTest Console Application",
+
+    "dependencies": {
+    },
+
+    "commands": {
+        "SocketTest": "SocketTest"
+    },
+
+    "frameworks": {
+        "dnxcore50": {
+            "dependencies": {
+                "Microsoft.CSharp": "4.0.1-beta-23326",
+                "System.Net.Security": "4.0.0-beta-23326",
+                "System.Net.Primitives": "4.0.11-beta-23326",
+                "System.Net.Sockets": "4.1.0-beta-23326",
+                "System.Collections": "4.0.11-beta-23326",
+                "System.Console": "4.0.0-beta-23326",
+                "System.Linq": "4.0.1-beta-23326",
+                "System.Threading": "4.0.11-beta-23326"
+            }
+        }
+    }
+}
