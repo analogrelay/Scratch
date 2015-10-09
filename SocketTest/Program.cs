@@ -27,12 +27,13 @@ namespace SocketTest
                 stream.Write(buffer, 0, buffer.Length);
 
                 // Read the response
-                using (var reader = new StreamReader(stream))
-                {
-                    var response = reader.ReadToEnd();
-                    Console.WriteLine("Response:");
-                    Console.WriteLine(response);
-                }
+		byte[] readbuffer = new byte[1024];
+		int read = 0;
+	        Console.WriteLine("Response:");
+		while((read = stream.Read(readbuffer, 0, buffer.Length)) != 0) {
+			var converted = Encoding.UTF8.GetString(readbuffer, 0, read);
+			Console.Write(converted);
+		}
             }
         }
 
