@@ -22,9 +22,9 @@ int main() {
     printf("errno before: %d\n", errno);
     printf("** sysctl call **\n");
     int ret = sysctl(mib, 2, kernelVersion, &len, NULL, 0);
+    printf("sysctl ret: %d\n", ret);
     printf("terminator: %d\n", kernelVersion[len]);
     printf("errno after: %d\n", errno);
-    printf("sysctl ret: %d\n", ret);
     printf("len after: %lu\n", len);
     printf("OS Version: %s\n", kernelVersion);
     printf("CTL_KERN: %d\n", CTL_KERN);
