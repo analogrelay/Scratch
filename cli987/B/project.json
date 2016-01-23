@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0-*",
+    "dependencies": {
+        "System.Runtime": "4.0.20-rc3-23722"
+    },
+    "frameworks": {
+        "dotnet5.4": {}
+    }
+}
